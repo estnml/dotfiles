@@ -1,0 +1,67 @@
+// Load with --load-config examples/2.jsonc
+// Note that you must replace the image path to an existing image to display it.
+{
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"display": {
+		"separator": "  "
+	},
+	"modules": [
+		{
+			"type": "cpu",
+			"key": "cpu"
+		},
+		{
+			"type": "processes",
+			"key": "processes"
+		},
+		{
+			"type": "gpu",
+			"key": "gpu"
+		},
+		{
+			"type": "disk",
+			"key": "disk"
+		},
+		{
+			"type": "memory",
+			"key": "memory"
+		},
+		{
+			"type": "display",
+			"key": "display"
+		},
+		{
+			"type": "os",
+			"key": "os" // Just get your distro's logo off nerdfonts.com
+		},
+		{
+			"type": "kernel",
+			"key": "kernel",
+			"format": "{1} {2}"
+		},
+		{
+			"type": "wm",
+			"key": "wm"
+		},
+		{
+			"type": "shell",
+			"key": "shell"
+		},
+		{
+			"type": "terminal",
+			"key": "terminal"
+		},
+		{
+			"type": "terminalfont",
+			"key": "font"
+		},
+		{
+			"type": "packages",
+			"key": "packages"
+		},
+		{
+			"type": "uptime",
+			"key": "uptime"
+		}
+	]
+}

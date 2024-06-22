@@ -1,0 +1,85 @@
+{
+    "clock": {
+        "format": "{:%R - %a, %d.%m.%Y}"
+    },
+    "custom/tofi": {
+        "format": ""
+    },
+    "custom/seperator": {
+        "format": "|"
+    },
+    "bluetooth": {
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        "format": " {status}",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": " {device_alias}",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+    },
+    "sway/window": {
+        "format": "{title}",
+        "max-length": 50
+    },
+    "hyprland/window": {
+        "format": "{}",
+        "separate-outputs": true
+    },
+    "hyprland/language": {
+        "format": "kb: {}",
+        "format-tr": "as bayrakları"
+    },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "inhibit on",
+            "deactivated": "inhibit off"
+        }
+    },
+    "tray": {
+        "icon-size": 18,
+        "spacing": 8
+    },
+    "sway/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true
+    },
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "on-scroll-up": "hyprctl dispatch workspace r-1",
+        "on-scroll-down": "hyprctl dispatch workspace r+1",
+        "all-outputs": false
+    },
+    // "custom/swww": {
+    //     "format": "",
+    //     "tooltip": false,
+    //     "on-click": "swww img $(find ~/Pictures/Wallpapers -type f | shuf -n 1) --transition-type outer --transition-fps 165 --transition-pos 0.887,0.477"
+    // },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": [
+            "",
+            "",
+            ""
+        ],
+        "scroll-step": 1.0
+    }
+    // "mpris": {
+    //     "format": "{player_icon} {dynamic}",
+    //     "format-paused": "{status_icon} <i>{dynamic}</i>",
+    //     "interval": 1,
+    //     "dynamic-len": 48,
+    //     "ellipsis": "...",
+    //     "player-icons": {
+    //         "default": "▶ ",
+    //         "mpv": "🎵"
+    //     },
+    //     "status-icons": {
+    //         "paused": "⏸ "
+    //     },
+    //     "ignored-players": [
+    //         "firefox"
+    //     ]
+    // }
+}

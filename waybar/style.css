@@ -1,0 +1,148 @@
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'JetBrains Mono', "Font Awesome 6 Free";
+    font-size: 12px;
+    font-weight: 600;
+    transition: none;
+    border-radius: 0;
+}
+
+
+/* main {
+    background-color: ;
+} */
+
+window#waybar {
+    background: #0D1B1E;
+    /* border-radius: 10px; */
+    transition: none;
+}
+
+/*-----module groups----*/
+.modules-right,
+.modules-left,
+.modules-center {
+    padding: 2px 5px;
+    background: transparent;
+}
+
+
+tooltip {
+    background: #323437;
+    color: #cdd6f4;
+    /* border-radius: 12px; */
+}
+
+#workspaces {
+    /* border: 2px #333648 solid;
+    background-color: #2B2E3F; */
+    /* border-radius: 10px; */
+    /* background: #CDEDF6; */
+    /* margin-right: 20px;
+    border-radius: 9999px; */
+}
+
+#workspaces button {
+    background: transparent;
+    color: #4c566a;
+    transition: none;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: #d8dee9;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+    color: #7391CC;
+}
+
+#workspaces button.active {
+    /* color: #11111b; */
+    /* background: #fab387; */
+    /* border-radius: 10px; */
+}
+
+#custom-swww {
+    color: #D8DEE9;
+}
+
+#custom-seperator {
+    color: #D8DEE9;
+}
+
+#network {
+    color: #D8DEE9;
+}
+
+
+#window {
+    color: #D4DAE4;
+}
+
+#wireplumber {
+    color: #D6DCE6;
+}
+
+#custom-recorder {
+    font-size: 10px;
+    margin: 2px 7px 0px 7px;
+}
+
+#clock {
+    color: #D4DAE4;
+    /* border: 2px #333648 solid;
+    background-color: #2B2E3F; */
+    /* border-radius: 10px; */
+}
+
+/* #mpris {
+    color: #D6DCE6;
+} */
+
+/*
+#tray,
+#network,
+#bluetooth,
+#workspaces,
+#clock,
+#mpd,
+#custom-swww {
+}*/
+
+
+#mode {
+    color: #cc3436;
+    font-weight: bold;
+}
+
+#tray {
+    color: #d8dee9;
+    background-color: #0D1B1E;
+}
+
+#bluetooth {
+    background: #0D1B1E;
+    color: #d8dee9;
+}
+
+/*-----Indicators----*/
+#network.disconnected {
+    color: #ff5454;
+}
+
+#network.disabled {
+    color: #e3c78a;
+}
+
+#idle_inhibitor.activated {
+    color: #7391CC;
+}
+
+#pulseaudio.muted {
+    color: #e3c78a;
+}
